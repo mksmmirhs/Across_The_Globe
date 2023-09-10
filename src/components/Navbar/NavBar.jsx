@@ -1,46 +1,68 @@
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import { FaSearch } from 'react-icons/fa';
-import { IoMdArrowDropdown } from 'react-icons/io';
-
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
-        <Navbar.Brand href="#" className="ms-5">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand ms-5" href="#">
           <img src="../../../public/whole.png" alt="" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Form
-            className="position-relative mx-auto"
-            style={{ width: '360px' }}
-          >
-            <Form.Control
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarScroll">
+          <form className="d-flex mx-auto position-relative">
+            <input
+              style={{ width: '360px' }}
+              className="form-control me-2 rounded-pill ps-5"
               type="search"
               placeholder="Search for your favorite groups in ATG"
-              className="me-2 rounded-pill ps-5"
               aria-label="Search"
             />
-            <FaSearch className="position-absolute top-50 start-0 translate-middle-y mx-2"></FaSearch>
-          </Form>
-          <Nav
-            className="my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
+            <FaSearch className="position-absolute top-50 start-0 translate-middle-y ms-2" />
+          </form>
+          <ul
+            className="navbar-nav me-5 my-2 my-lg-0 navbar-nav-scroll"
+            style={{ '--bs-scroll-height': '100px' }}
           >
-            <div className="d-flex justify-content-center align-items-center me-5">
-              <span>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarScrollingDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Create account. <span className="text-primary">It’s free!</span>
-              </span>
-              <IoMdArrowDropdown></IoMdArrowDropdown>
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+              </a>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarScrollingDropdown"
+              >
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Login
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Sign up
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
