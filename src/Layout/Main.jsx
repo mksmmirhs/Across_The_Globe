@@ -7,6 +7,7 @@ const Main = () => {
       <div style={{ maxWidth: '1440px' }} className="mx-auto">
         <NavBar></NavBar>
       </div>
+
       <Outlet></Outlet>
     </div>
   );

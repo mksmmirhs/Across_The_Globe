@@ -1,0 +1,77 @@
+@media (max-width: 576px) {
+  .banImg {
+    height: 236px;
+  }
+  .bannerHeading {
+    padding-left: 16px;
+    padding-bottom: 32px;
+  }
+  .bannerHeading h1 {
+    font-size: 17px;
+  }
+  .bannerHeading p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 576px) {
+  .bannerHeading {
+    padding-left: 16px;
+    padding-bottom: 32px;
+  }
+  .bannerHeading h1 {
+    font-size: 17px;
+  }
+  .bannerHeading p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bannerHeading {
+    padding-left: 16px;
+    padding-bottom: 32px;
+  }
+  .bannerHeading h1 {
+    font-size: 17px;
+  }
+  .bannerHeading p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bannerHeading {
+    padding-left: 16px;
+    padding-bottom: 32px;
+  }
+  .bannerHeading h1 {
+    font-size: 17px;
+  }
+  .bannerHeading p {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bannerHeading {
+    padding-left: 200px;
+    padding-bottom: 80px;
+  }
+  .bannerHeading h1 {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bannerHeading {
+    padding-left: 200px;
+    padding-bottom: 80px;
+  }
+  .bannerHeading h1 {
+    font-size: 36px;
+  }
+  .bannerHeading p {
+    font-size: 18px;
+  }
+}
